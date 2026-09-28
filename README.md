@@ -23,7 +23,7 @@
 
 | 檔案 | 說明 |
 | --- | --- |
-| `Mips_Pipelined.v` | 頂層模組，連接整個 datapath |
+| `Mips_Pipelined.v` | 主要模組，連接整個 datapath |
 | `Control_Unit.v` | 主控制單元（依 opcode / funct 產生控制訊號） |
 | `ALU_Control_Unit.v` | ALU 控制與乘法 stall 控制 |
 | `ALU.v`、`ALU_1bit.v`、`FA.v`、`Shifter.v` | ALU 及其子元件 |
@@ -31,7 +31,7 @@
 | `IF_ID.v`、`ID_EX.v`、`EX_MEM.v`、`MEM_WB.v` | 管線暫存器 |
 | `PC.v`、`Add.v`、`MUX_2to1.v`、`MUX_4to1.v`、`Beq_Unit.v` | PC、加法器、多工器、分支比較 |
 | `Reg_File.v`、`Memory.v` | 暫存器檔、指令 / 資料記憶體 |
-| `Sign_Extend.v`、`UnSign_Extend.v` | 立即值擴展 |
+| `Sign_Extend.v`、`UnSign_Extend.v` | Sign Extension |
 | `tb_Pipelined.v` | Testbench |
 | `instr_mem.txt` | 指令記憶體初始值（每行 1 byte，little endian） |
 | `data_mem.txt` | 資料記憶體初始值 |
